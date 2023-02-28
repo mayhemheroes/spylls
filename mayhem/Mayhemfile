@@ -1,0 +1,9 @@
+project: spylls
+target: fuzz-word
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_word.py
+    libfuzzer: true
+    timeout: 12
